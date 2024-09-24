@@ -88,9 +88,9 @@ async def start_asyncio_loop():
 def create_inline_keyboard():
     markup = types.InlineKeyboardMarkup()
     button3 = types.InlineKeyboardButton(
-        text="❤‍🩹 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ❤‍🩹", url="https://t.me/CRACKWAR0")
+        text="🔥 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/+p-27K6Lw2qE2MTM1")
     button1 = types.InlineKeyboardButton(text="👤 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 👤",
-        url="https://t.me/@TM_CRACKWAR_ASKRIDER")
+        url="https://t.me/@Galaxy_Carder")
     markup.add(button3)
     markup.add(button1)
     return markup
@@ -321,7 +321,7 @@ def handle_attack_command(message):
         if not user_data or user_data['plan'] == 0:
             bot.send_message(chat_id, "*🚫 Access Denied!*\n"
                                        "*You need to be approved to use this bot.*\n"
-                                       "*Contact the owner for assistance: @TM_CRACKWAR_ASKRIDER.*", 
+                                       "*Contact the owner for assistance: @Galaxy_Carder.*", 
                                        reply_markup=create_inline_keyboard(), parse_mode='Markdown')
             return
 
@@ -440,9 +440,9 @@ def myinfo_command(message):
             )
             markup = types.InlineKeyboardMarkup()
             button1 = types.InlineKeyboardButton(text="☣️ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 ☣️",
-                                                 url="https://t.me/@TM_CRACKWAR_ASKRIDER")
+                                                 url="https://t.me/@Galaxy_Carder")
             button2 = types.InlineKeyboardButton(
-                text="💸 𝗣𝗿𝗶𝗰𝗲 𝗟𝗶𝘀𝘁 💸", url="https://t.me/CRACKWAR0/2457")
+                text="💸 𝗣𝗿𝗶𝗰𝗲 𝗟𝗶𝘀𝘁 💸", url="https://t.me/Galaxytutorials/19")
             markup.add(button1)
             markup.add(button2)
         else:
@@ -461,7 +461,7 @@ def myinfo_command(message):
             )
             markup = types.InlineKeyboardMarkup()
             button = types.InlineKeyboardButton(
-                text="❤‍🩹 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ❤‍🩹", url="https://t.me/CRACKWAR0")
+                text="🔥 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/+p-27K6Lw2qE2MTM1")
             markup.add(button)
 
         bot.send_message(message.chat.id,
@@ -517,7 +517,7 @@ def owner_command(message):
     response = (
         "*👤 **Owner Information:**\n\n"
         "For any inquiries, support, or collaboration opportunities, don't hesitate to reach out to the owner:\n\n"
-        "📩 **Telegram:** @TM_CRACKWAR_ASKRIDER\n\n"
+        "📩 **Telegram:** @Galaxy_Carder"
         "💬 **We value your feedback!** Your thoughts and suggestions are crucial for improving our service and enhancing your experience.\n\n"
         "🌟 **Thank you for being a part of our community!** Your support means the world to us, and we’re always here to help!*\n"
     )
@@ -547,7 +547,7 @@ def canary_command(message):
     markup = types.InlineKeyboardMarkup()
     button1 = types.InlineKeyboardButton(
         text="📱 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗙𝗼𝗿 𝗔𝗻𝗱𝗿𝗼𝗶𝗱 📱",
-        url="https://t.me/ABOUT_DESTROYER/7")
+        url="https://t.me/Galaxytutorials/20")
     button2 = types.InlineKeyboardButton(
         text="🍎 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗳𝗼𝗿 𝗶𝗢𝗦 🍎",
         url="https://apps.apple.com/in/app/surge-5/id1442620678")
