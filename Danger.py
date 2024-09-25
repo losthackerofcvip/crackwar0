@@ -90,7 +90,7 @@ def create_inline_keyboard():
     button3 = types.InlineKeyboardButton(
         text="🔥 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/+p-27K6Lw2qE2MTM1")
     button1 = types.InlineKeyboardButton(text="👤 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 👤",
-        url="https://t.me/@Galaxy_Carder")
+        url="https://t.me/Galaxy_Carder")
     markup.add(button3)
     markup.add(button1)
     return markup
@@ -440,7 +440,7 @@ def myinfo_command(message):
             )
             markup = types.InlineKeyboardMarkup()
             button1 = types.InlineKeyboardButton(text="☣️ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 ☣️",
-                                                 url="https://t.me/@Galaxy_Carder")
+                                                 url="https://t.me/Galaxy_Carder")
             button2 = types.InlineKeyboardButton(
                 text="💸 𝗣𝗿𝗶𝗰𝗲 𝗟𝗶𝘀𝘁 💸", url="https://t.me/Galaxytutorials/19")
             markup.add(button1)
