@@ -88,9 +88,9 @@ async def start_asyncio_loop():
 def create_inline_keyboard():
     markup = types.InlineKeyboardMarkup()
     button3 = types.InlineKeyboardButton(
-        text="🔥 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/+p-27K6Lw2qE2MTM1")
+        text="🔥 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/CRACKWAR0")
     button1 = types.InlineKeyboardButton(text="👤 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 👤",
-        url="https://t.me/Galaxy_Carder")
+        url="https://t.me/IPxKINGYT")
     markup.add(button3)
     markup.add(button1)
     return markup
@@ -440,9 +440,9 @@ def myinfo_command(message):
             )
             markup = types.InlineKeyboardMarkup()
             button1 = types.InlineKeyboardButton(text="☣️ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 ☣️",
-                                                 url="https://t.me/Galaxy_Carder")
+                                                 url="https://t.me/IPxKINGYT")
             button2 = types.InlineKeyboardButton(
-                text="💸 𝗣𝗿𝗶𝗰𝗲 𝗟𝗶𝘀𝘁 💸", url="https://t.me/Galaxytutorials/19")
+                text="💸 𝗣𝗿𝗶𝗰𝗲 𝗟𝗶𝘀𝘁 💸", url="https://t.me/CRACKWAR0/2280")
             markup.add(button1)
             markup.add(button2)
         else:
@@ -461,7 +461,7 @@ def myinfo_command(message):
             )
             markup = types.InlineKeyboardMarkup()
             button = types.InlineKeyboardButton(
-                text="🔥 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/+p-27K6Lw2qE2MTM1")
+                text="🔥 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/CRACKWAR0")
             markup.add(button)
 
         bot.send_message(message.chat.id,
@@ -547,7 +547,7 @@ def canary_command(message):
     markup = types.InlineKeyboardMarkup()
     button1 = types.InlineKeyboardButton(
         text="📱 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗙𝗼𝗿 𝗔𝗻𝗱𝗿𝗼𝗶𝗱 📱",
-        url="https://t.me/Galaxytutorials/20")
+        url="https://t.me/ABOUT_DESTROYER/7")
     button2 = types.InlineKeyboardButton(
         text="🍎 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗳𝗼𝗿 𝗶𝗢𝗦 🍎",
         url="https://apps.apple.com/in/app/surge-5/id1442620678")
