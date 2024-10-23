@@ -19,7 +19,7 @@ import psutil
 loop = asyncio.get_event_loop()
 
 TOKEN = '7186923047:AAEiPzQ9_IluDgiwDyDXidUzMq5CTl77hTM'
-MONGO_URI = 'mongodb+srv://Cluster0:Cluster0@cluster0.5mvg9ej.mongodb.net/danger?retryWrites=true&w=majority'
+MONGO_URI = 'mongodb+srv://rishi:ipxkingyt@rishiv.ncljp.mongodb.net/?retryWrites=true&w=majority&appName=rishiv'
 FORWARD_CHANNEL_ID = -1002027880444
 CHANNEL_ID = -1002027880444
 error_channel_id = -1002027880444
@@ -27,7 +27,7 @@ error_channel_id = -1002027880444
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
-db = client['danger']
+db = client['rishi']
 users_collection = db.users
 
 bot = telebot.TeleBot(TOKEN)
@@ -90,7 +90,7 @@ def create_inline_keyboard():
     button3 = types.InlineKeyboardButton(
         text="🔥 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/CRACKWAR0")
     button1 = types.InlineKeyboardButton(text="👤 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 👤",
-        url="https://t.me/IPxKINGYT")
+        url="https://t.me/CRACKWAR0")
     markup.add(button3)
     markup.add(button1)
     return markup
@@ -321,7 +321,7 @@ def handle_attack_command(message):
         if not user_data or user_data['plan'] == 0:
             bot.send_message(chat_id, "*🚫 Access Denied!*\n"
                                        "*You need to be approved to use this bot.*\n"
-                                       "*Contact the owner for assistance: @Galaxy_Carder.*", 
+                                       "*Contact the owner for assistance: @CRACKWAR0.*", 
                                        reply_markup=create_inline_keyboard(), parse_mode='Markdown')
             return
 
@@ -440,7 +440,7 @@ def myinfo_command(message):
             )
             markup = types.InlineKeyboardMarkup()
             button1 = types.InlineKeyboardButton(text="☣️ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 ☣️",
-                                                 url="https://t.me/IPxKINGYT")
+                                                 url="https://t.me/CRACKWAR0")
             button2 = types.InlineKeyboardButton(
                 text="💸 𝗣𝗿𝗶𝗰𝗲 𝗟𝗶𝘀𝘁 💸", url="https://t.me/CRACKWAR0/2280")
             markup.add(button1)
@@ -517,7 +517,7 @@ def owner_command(message):
     response = (
         "*👤 **Owner Information:**\n\n"
         "For any inquiries, support, or collaboration opportunities, don't hesitate to reach out to the owner:\n\n"
-        "📩 **Telegram:** @Galaxy_Carder"
+        "📩 **Telegram:** @CRACKWAR0"
         "💬 **We value your feedback!** Your thoughts and suggestions are crucial for improving our service and enhancing your experience.\n\n"
         "🌟 **Thank you for being a part of our community!** Your support means the world to us, and we’re always here to help!*\n"
     )
@@ -576,3 +576,4 @@ if __name__ == "__main__":
             logging.error(f"An error occurred while polling: {e}")
         logging.info(f"Waiting for {REQUEST_INTERVAL} seconds before the next request...")
         time.sleep(REQUEST_INTERVAL)
+ 
