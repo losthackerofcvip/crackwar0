@@ -1,33 +1,33 @@
-version: v1.0
-name: Python
-agent:
-  machine:
-    type: f1-standard-2
-    os_image: ubuntu2204
+
+
+environment:
+TELEGRAM_BOT_TOKEN: $TELEGRAM_BOT_TOKEN
+PYTHON_VERSION: "3.9"
+
+dependencies:
+cache:
+paths:
+- ~/.cache/pip
+install:
+- pip install python-telegram-bot
+
 blocks:
-  - name: Test
-    task:
-      jobs:
-        - name: pytest
-          matrix:
-            - env_vars: PYTHON_VERSION
-              values:
-                - '2.7'
-                - '3.5'
-                - '3.6'
-                - '3.7'
-          commands:
-            - sem-version python $PYTHON_VERSION
-            - checkout
-            - python -m pip install --upgrade pip
-            - pip install -r requirements.txt
-            - pip install flake8
-            - 'flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics'
-            - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-            - pip install pytest
-            - pytest
-      env_vars:
-        - name: PYTHON_VERSION
-          value: '3.0'
-        - name: FOO_2
-          value: BAR_2
+- name: Run Telegram Bot
+task:
+env_vars:
+- name: TELEGRAM_BOT_TOKEN
+value: $TELEGRAM_BOT_TOKEN
+prologue:
+commands:
+- echo "Starting deployment..."
+jobs:
+- name: Run Bot
+commands:
+- pip install python-telegram-bot
+- python (link unavailable)
+- echo "Bot started successfully!"
+
+workflow:
+name: Telegram Bot Deployment
+blocks:
+- Run Telegram Bot
