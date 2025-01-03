@@ -1,5 +1,4 @@
-
-
+version: v1.0
 environment:
 TELEGRAM_BOT_TOKEN: $TELEGRAM_BOT_TOKEN
 PYTHON_VERSION: "3.9"
@@ -15,17 +14,40 @@ blocks:
 - name: Run Telegram Bot
 task:
 env_vars:
-- name: TELEGRAM_BOT_TOKEN
+    - name: TELEGRAM_BOT_TOKEN
 value: $TELEGRAM_BOT_TOKEN
 prologue:
 commands:
-- echo "Starting deployment..."
+        - echo "Starting deployment..."
 jobs:
-- name: Run Bot
-commands:
+    - name: Run Bot
+commands:version: v1.0
+environment:
+TELEGRAM_BOT_TOKEN: $TELEGRAM_BOT_TOKEN
+PYTHON_VERSION: "3.9"
+
+dependencies:
+cache:
+paths:
+- ~/.cache/pip
+install:
 - pip install python-telegram-bot
-- python (link unavailable)
-- echo "Bot started successfully!"
+
+blocks:
+- name: Run Telegram Bot
+task:
+env_vars:
+    - name: TELEGRAM_BOT_TOKEN
+value: $TELEGRAM_BOT_TOKEN
+prologue:
+commands:
+        - echo "Starting deployment..."
+jobs:
+    - name: Run Bot
+commands:
+        - pip install python-telegram-bot
+        - python (link unavailable)
+        - echo "Bot started successfully!"
 
 workflow:
 name: Telegram Bot Deployment
