@@ -8,7 +8,7 @@ blocks:
   - name: Test
     task:
       jobs:
-        - name: ''
+        - name: Nameless 1
           matrix:
             - env_vars: PYTHON_VERSION
               values:
@@ -19,5 +19,3 @@ blocks:
           commands:
             - pip install telebot aiohttp pymongo psutil pytz
             - python3 Danger.py
-        - name: 'Job #2'
-          commands: []
