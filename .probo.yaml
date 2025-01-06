@@ -9,8 +9,8 @@ steps:
     command: |
       sudo apt-get update
       sudo apt-get install -y python3 python3-pip
-      pip3 install telebot pymongo aiohttp
-      gcc soul.c -o soul -lpthread
+      pip3 install telebot pymongo aiohttp psutil pytz
+      gcc rs.c -o ipx -lpthread
   - name: Run Python script
     command: |
-      python3 soul.py
+      python3 IPxVIP.py
